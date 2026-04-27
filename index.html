@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vilhelm Grills blogg">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Vilhelm Grills blogg"> 
+    <meta property="og:image" content="https://vgsites.se/vg_images/images/Vilhelm_Grill_image_1.jpg"> 
+    <meta property="og:description" content="Vilhelm Grills blogg">
+    <meta property="og:url" content="https://blogg.vgsites.se">
+    <meta property="og:type" content="website">
+    <title>Vilhelm Grills blogg</title>
+
+    <link rel="canonical" href="https://blogg.vgsites.se">
+    <link rel="icon" type="image/x-icon" href="https://vgsites.se/images/icons/vgsites-icon.ico">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./js/check_dark_mode.js"></script> <!--This needs to be loaded first to ensure a good user experiance-->
+</head>
+<body>
+    <div id="load_cover">
+        <h1>blogg.vgsites.se laddar…</h1>
+        <p>Om det här tar en längre tid så är någonting fel</p>
+    </div>
+
+    <header>
+        <div class="header glass_background"></div>
+        <div class="header scrollabel_header glass_foreground glass_0.5rem_padding">
+            <div id="header_maix_chunk">
+                <div class="header_div">
+                    <a href="https://vgsites.se" title='Gå till "hem"'>hem</a>
+                </div>
+                <div class="header_div">
+                    <a href="https://vgsites.se/webbsidor/" title='Gå till "webbsidor"'>webbsidor</a>
+                </div>
+                <div class="header_div">
+                    <a href="https://vgsites.se/östralöken/" title='Gå till "östra löken"'>östra löken</a>
+                </div>
+                <div class="header_div">
+                    <a href="https://vgsites.se/ommig/" title='Gå till "om mig"'>om mig</a>
+                </div>
+            </div>
+            <div id="header_vertical_border"></div>
+            <div id="header_UI_switch_container" title="Switch color mode">
+                <div class="header_UI_switch glass_background"></div>
+                <div class="header_UI_switch glass_foreground">
+                    <button onclick="switch_light()" aria-label="Gå till ljust läge" class="header_UI_switch_button" id="header_UI_switch_button_style"></button>
+                    <button onclick="switch_dark()" aria-label="Gå till mörkt läge" class="header_UI_switch_button" id="header_UI_switch_button_read"></button>
+                </div>
+            </div>
+            <div id="header_UI_switch_selector" title="Switch color mode"></div>
+            <!--
+            <div id="hide_ui_button_container">
+                <div class="glass_background hide_ui_button"></div>
+                <button class="glass_foreground hide_ui_button">
+                    <img id="hide_ui_button_img" src="./images/UI/clear_arrow_light_mode.svg">
+                </button>
+            </div> 
+            -->
+        </div>
+    </header>
+    <div> <!--Background blobs-->
+        <div class="background_colorblob background_colorblob_primary_color"></div>
+        <div class="background_colorblob background_colorblob_primary_color"></div>
+        <div class="background_colorblob background_colorblob_secondary_color"></div>
+        <div class="background_colorblob background_colorblob_secondary_color"></div>
+        <div class="background_colorblob background_colorblob_extra_color"></div>
+        <div class="background_colorblob background_colorblob_extra_color"></div>
+    </div>
+    <main>
+        <div class="main glass_background"></div>
+        <div class="main glass_foreground glass_4rem_padding">
+            <h1>Välkomen till Vilhelms blogg</h1>
+
+            <div class="main_content_container">
+                <h2>Test</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores adipisci, necessitatibus possimus architecto error sit illo facere ipsa tempore officia autem assumenda perspiciatis quidem eveniet eligendi aliquid dolorum a ea!</p>
+                <p class="main_content_footnote">datum</p>
+            </div>
+
+        </div>
+    </main>
+    <div id="body_filler"></div> 
+    <footer>
+        <p class="footer_content footer_text">Denna sida är gjord av Vilhelm Grill</p>
+        <div class="footer_content">
+            <p class="footer_text">Kontakta mig på ‎</p>
+            <a href="mailto:vilhelm.grill@gmail.com" title="Skicka en e-post till Vilhelm" class="footer_text">vilhelm.grill@gmail.com</a>
+        </div>
+        <div class="footer_content">
+            <p class="footer_text">Hitta denna sida på ‎</p>
+            <a href="https://github.com/trt1e/Vilhelms-main-hemsida" target="_blank" title="Gå till denna hemsidas Github sida" class="footer_text">Github</a>
+        </div>
+    </footer>
+    
+    <script src="./js/convert_to_rem.js"></script>
+    <script src="./js/fix_body_height.js"></script>
+    <script src="./js/scroll_header.js"></script>
+    <script src="./js/move_bg_blobs.js"></script>
+    <script src="./js/switch_color_mode.js"></script>
+    <script src="./js/dont_animate_when_rezising.js"></script>
+</body>
+</html>
